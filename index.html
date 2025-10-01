@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nativa | Spanish Fluency Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #FAF9F6;
+            color: #1E2A3A;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant', serif;
+        }
+        .text-gold {
+            color: #C2A567;
+        }
+        .border-gold {
+            border-color: #C2A567;
+        }
+        .bg-sage {
+            background-color: #BFC6B0;
+        }
+        .hover-underline {
+            position: relative;
+        }
+        .hover-underline:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #1E2A3A;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .hover-underline:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .image-zoom {
+            transition: transform 0.2s ease;
+        }
+        .image-zoom:hover {
+            transform: scale(1.03);
+        }
+        .fade-in {
+            animation: fadeIn 0.2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Sticky Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 z-50 py-4 px-6 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-medium">NATIVA</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover-underline">About</a>
+                <a href="#services" class="hover-underline">Services</a>
+                <a href="#journal" class="hover-underline">Journal</a>
+                <a href="#contact" class="hover-underline">Contact</a>
+                <a href="#contact" class="ml-4 px-4 py-2 border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-200">Request a Consultation</a>
+            </nav>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-serif font-light mb-6 fade-in">Spanish fluency, tailored to your lifestyle.</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 max-w-2xl mx-auto fade-in">Private language & cultural coaching for discerning individuals and families in Montecito.</p>
+            <a href="#contact" class="inline-block px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-200 fade-in">Request a Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-lg md:text-xl font-light leading-relaxed">Nativa offers bespoke Spanish coaching designed for your life — whether for travel, culture, education, or professional growth. Lessons are private, refined, and discreet.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif font-light mb-16 text-center">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Service Card 1 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/office/1024x576/1" alt="Discovery Consultation" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">Discovery Consultation</h3>
+                    <p class="text-sm font-light">A private introduction to explore your goals and design a tailored program.</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/travel/1024x576/2" alt="The Journey" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">The Journey</h3>
+                    <p class="text-sm font-light">Personalized coaching for travel, culture, or professional growth — structured around your schedule.</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/indoor/1024x576/3" alt="The Residence" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">The Residence</h3>
+                    <p class="text-sm font-light">Discreet in-home programs for families and households; language woven with culture.</p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/workspace/1024x576/4" alt="Concierge Español" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">Concierge Español</h3>
+                    <p class="text-sm font-light">Bespoke immersion with priority scheduling and on-call support (ideal for travel/executive needs).</p>
+                </div>
+            </div>
+            
+            <!-- Add-on Services -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="border-t border-sage pt-4">
+                    <h3 class="text-lg font-serif mb-2">Travel Preparation Intensive</h3>
+                </div>
+                <div class="border-t border-sage pt-4">
+                    <h3 class="text-lg font-serif mb-2">Cultural Enrichment Session</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal Section -->
+    <section id="journal" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif font-light mb-16 text-center">Journal</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Journal Card 1 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/travel/1024x576/5" alt="Spanish for Riviera Maya" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">Spanish for Riviera Maya: 48-Hour Prep</h3>
+                    <p class="text-sm font-light">Elegant phrases for dining, drivers, and hotels.</p>
+                </div>
+                
+                <!-- Journal Card 2 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/education/1024x576/6" alt="The Art of Conversation" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">The Art of Conversation</h3>
+                    <p class="text-sm font-light">Mastering the rhythm of Spanish dialogue.</p>
+                </div>
+                
+                <!-- Journal Card 3 -->
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="http://static.photos/workspace/1024x576/7" alt="Business Spanish Essentials" class="w-full h-64 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">Business Spanish Essentials</h3>
+                    <p class="text-sm font-light">Key phrases for professional settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-xl font-serif italic mb-2">"Professional, refined, and incredibly effective — a true luxury experience."</p>
+            <p class="text-sm">— Private Client, Montecito</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-serif font-light mb-16 text-center">Contact</h2>
+            <form class="max-w-xl mx-auto">
+                <div class="grid gap-6 mb-6">
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+                    <select class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+                        <option value="" disabled selected>Area of Interest</option>
+                        <option>Travel</option>
+                        <option>Academic</option>
+                        <option>Business</option>
+                        <option>Cultural</option>
+                        <option>Family/Household</option>
+                    </select>
+                    <textarea placeholder="Message" rows="4" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-200">Request a Consultation</button>
+                <p class="text-xs text-center mt-4 text-gray-500">Your information remains confidential.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 px-6 border-t border-gray-100">
+        <div class="max-w-xl mx-auto text-center">
+            <h3 class="text-xl font-serif font-light mb-4">Join the Nativa List</h3>
+            <p class="text-sm font-light mb-6">Occasional cultural notes and early access to bespoke sessions.</p>
+            <form class="flex">
+                <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+                <button type="submit" class="ml-4 px-4 py-2 border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-200">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <a href="#" class="text-xl font-serif">NATIVA</a>
+                <p class="text-xs mt-1">Montecito, CA</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-sm hover-underline">Privacy</a>
+                <a href="#" class="text-sm hover-underline">Terms</a>
+                <a href="mailto:info@nativa.com" class="text-sm hover-underline">info@nativa.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Simple fade-in animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                el.style.opacity = '0';
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
