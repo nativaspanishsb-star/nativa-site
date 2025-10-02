@@ -199,8 +199,24 @@
     <section id="contact" class="py-20 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-serif font-light mb-16 text-center">Contact</h2>
-            <form action="https://formspree.io/f/xqaybevq>
-                <div class="grid gap-6 mb-6">
+<form action="https://formspree.io/f/xqaybevq" method="POST" class="max-w-xl mx-auto">
+  <div class="grid gap-6 mb-6">
+    <input type="text" name="name" placeholder="Name" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+    <input type="email" name="_replyto" placeholder="Email" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+    <select name="interest" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
+      <option value="" disabled selected>Area of Interest</option>
+      <option>Travel</option>
+      <option>Academic</option>
+      <option>Business</option>
+      <option>Cultural</option>
+      <option>Family/Household</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="Message" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent"></textarea>
+  </div>
+  <button type="submit" class="w-full px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-200">Request a Consultation</button>
+  <p class="text-xs text-center mt-4 text-gray-500">Your information remains confidential.</p>
+</form>
+            <div class="grid gap-6 mb-6">
                     <input type="text" placeholder="Name" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
                     <input type="email" placeholder="Email" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
                     <select class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-gold bg-transparent">
